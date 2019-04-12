@@ -13,7 +13,30 @@
 		E462A27A226032FF00D9BA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462A278226032FF00D9BA43 /* Main.storyboard */; };
 		E462A27C2260330700D9BA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E462A27B2260330700D9BA43 /* Assets.xcassets */; };
 		E462A27F2260330700D9BA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462A27D2260330700D9BA43 /* LaunchScreen.storyboard */; };
+		E462A28E2260361D00D9BA43 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A28D2260361D00D9BA43 /* Common.swift */; };
+		E462A28F226036AE00D9BA43 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A287226034B500D9BA43 /* RxAtomic.framework */; };
+		E462A290226036AE00D9BA43 /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A287226034B500D9BA43 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A291226036AE00D9BA43 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A288226034B500D9BA43 /* RxCocoa.framework */; };
+		E462A292226036AE00D9BA43 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A288226034B500D9BA43 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A293226036AE00D9BA43 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A289226034B500D9BA43 /* RxSwift.framework */; };
+		E462A294226036AE00D9BA43 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A289226034B500D9BA43 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E462A295226036AE00D9BA43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E462A292226036AE00D9BA43 /* RxCocoa.framework in Embed Frameworks */,
+				E462A290226036AE00D9BA43 /* RxAtomic.framework in Embed Frameworks */,
+				E462A294226036AE00D9BA43 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E462A26F226032FF00D9BA43 /* TableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +47,10 @@
 		E462A27B2260330700D9BA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E462A27E2260330700D9BA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E462A2802260330700D9BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E462A287226034B500D9BA43 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = "<group>"; };
+		E462A288226034B500D9BA43 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		E462A289226034B500D9BA43 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		E462A28D2260361D00D9BA43 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E462A291226036AE00D9BA43 /* RxCocoa.framework in Frameworks */,
+				E462A28F226036AE00D9BA43 /* RxAtomic.framework in Frameworks */,
+				E462A293226036AE00D9BA43 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +89,24 @@
 				E462A272226032FF00D9BA43 /* AppDelegate.swift */,
 				E462A274226032FF00D9BA43 /* FirstViewController.swift */,
 				E462A276226032FF00D9BA43 /* SecondViewController.swift */,
+				E462A28D2260361D00D9BA43 /* Common.swift */,
 				E462A278226032FF00D9BA43 /* Main.storyboard */,
 				E462A27B2260330700D9BA43 /* Assets.xcassets */,
 				E462A27D2260330700D9BA43 /* LaunchScreen.storyboard */,
 				E462A2802260330700D9BA43 /* Info.plist */,
+				E462A286226034B500D9BA43 /* Frameworks */,
 			);
 			path = TableViewDemo;
+			sourceTree = "<group>";
+		};
+		E462A286226034B500D9BA43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E462A287226034B500D9BA43 /* RxAtomic.framework */,
+				E462A288226034B500D9BA43 /* RxCocoa.framework */,
+				E462A289226034B500D9BA43 /* RxSwift.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +119,7 @@
 				E462A26B226032FF00D9BA43 /* Sources */,
 				E462A26C226032FF00D9BA43 /* Frameworks */,
 				E462A26D226032FF00D9BA43 /* Resources */,
+				E462A295226036AE00D9BA43 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E462A28E2260361D00D9BA43 /* Common.swift in Sources */,
 				E462A277226032FF00D9BA43 /* SecondViewController.swift in Sources */,
 				E462A273226032FF00D9BA43 /* AppDelegate.swift in Sources */,
 				E462A275226032FF00D9BA43 /* FirstViewController.swift in Sources */,
@@ -288,6 +332,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TP5XU9V42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TableViewDemo/Frameworks",
+				);
 				INFOPLIST_FILE = TableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +354,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TP5XU9V42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TableViewDemo/Frameworks",
+				);
 				INFOPLIST_FILE = TableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
