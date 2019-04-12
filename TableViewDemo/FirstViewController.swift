@@ -31,13 +31,13 @@ class FirstViewController: UIViewController {
     
     func fetchJSONData() -> Void {
         if let url = self.url {
-            URLSession.shared.dataTask(with: url){data, repsonse, error in
+            URLSession.shared.dataTask(with: url){[weak self](data, repsonse, error) in
                 if let data = data {
                     do {
                         let decoded = try JSONDecoder().decode([User].self, from: data)
                         DispatchQueue.main.async {
-                            self.users = decoded
-                            self.tableView.reloadData()
+                            self!.users = decoded
+                            self!.tableView.reloadData()
                         }
                     }catch let error{
                         print("\(error.localizedDescription)")
